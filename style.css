@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lora";
+}
+
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+h2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*Pembagian kolom pada web*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 768px) {
+/* untuk mobile */
+[class*="col-"] {
+  width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
+.header{
+  background-color: #d81a33;
+  color: white;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sidebar {
+  height: auto;
+  float: left;
+  background-color: #a81427;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.main {
+  float: left;
+  padding: 10px;
+  background-color: #ffedf0;
+}
+
+
+.footer {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: #302423;
+  color: white;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+
+
+
+.footerend{
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  padding: 10px;
+  margin: 0.5px;
+
+}
+
+.menu{
+  margin-top: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.menu ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu li:hover {
+  background-color: #fc2844;
+}
+
+.menu ul ul{
+margin-left: 15px;
+}
+
+.menu a:link{
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.menu a:active{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 9px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  image: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.alamat {
+  padding: 5px;
+  align: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 5px;
+  margin: 10px;
+}
+
+.select{
+  background-color: #fc2844;
+}
+
+.petunjuk{
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  width: 97%;
+}
+
+
+.petunjuk li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.sambutan li{
+  background-color: #a81427;
+  height: 50px;
+  list-style-type: none;
+  color: white;
+}
+
+.sambutan{
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  height: 45px;
+  width: 97%;
+  padding: 5px;
+}
+
+.iconpetunjuk{
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 5px;
+}
+
+.kotakakun{
+  background-color: #d81a33;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  width: 97%;
+}
+
+.kotakakun li{
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.daftaranggota{
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  height: 45px;
+  width: 97%;
+}
+
+table[name="daftaranggota"]{
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 3px 1px #ddd;
+  overflow: hidden;
+  border:5px solid #fff;
+  background-color: white;
+}
+
+table[name="daftaranggota"] th, table[name="daftaranggota"] td{
+  vertical-align: top;
+  padding:10px 7px;
+  text-align: left;
+  margin:0;
+}
+
+table[name="daftaranggota"] tbody tr:nth-child(odd) { /* Make table like zebra */
+background:#eee;
+}/* End CSS for Zebra Table in index.html */
+
+button[name="tambahanggota"]{
+  background-color: #0eba1a;
+  padding-top: 10px;
+  cursor: pointer;
+  float: right;
+  margin-right: 15px;
+  color: white;
+}
+
+button[name="tambahanggota"]:hover{
+  background-color: #14d122;
+}
+
+button[name="kembali"]{
+  background-color: #0eba1a;
+  padding-top: 10px;
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  color: white;
+}
+
+button[name="kembali"]:hover{
+  background-color: #14d122;
+}
+
+button[name="ubah"]{
+  background-color: #0eba1a;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[name="ubah"]:hover{
+  background-color: #14d122;
+}
+
+button[name="hapus"]{
+  background-color: #d81a33;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[name="hapus"]:hover{
+  background-color: #e8203a;
+  padding: 5px;
+}
+
+button[name="view"]{
+  background-color: #397fdb;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button[name="view"]:hover{
+  background-color: #4a95f7;
+  padding: 5px;
+}
+
+.gambartombol{
+  float: left;
+  margin-bottom: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.gambartombolaksi{
+  margin: 3px;
+  width: 15px;
+  height: 15px;
+}
+
+input[name="anggota"]{
+  width: 200px;
+  height: 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 5px;
+  border-radius: 3px;
+  border: 1px solid #9c9c9c;
+
+}
+
+select[name="sex"]{
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 200px;
+  height: 25px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+input[name="birth"]{
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 130px;
+  height: 25px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #9c9c9c;
+}
+
+label[name="tambahanggota"]{
+  width: 200px;
+  float: left;
+  margin: 5px;
+}
+
+form[name='tambahanggota']{
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #a81427;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[name="tombolform"]{
+  background-color: #397fdb;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+input[name="tombolform"]:hover{
+  background-color: #4a95f7;
+}
+
+table{
+  width: auto;
+}
+
+input[name="search"]{
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  width: 200px;
+  height: 25px;
+  background-color: white;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+#namatagihan{
+  width: 275px;
+  height: 40px;
+  background-color: #d81a33;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#namatagihan:hover{
+  background-color: #e8203a;
+}
+
+#riwayattagihan{
+  width: 275px;
+  height: 40px;
+  background-color: #397fdb;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#riwayattagihan:hover{
+  background-color: #4a95f7;
+}
