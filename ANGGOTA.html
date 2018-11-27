@@ -5,6 +5,24 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
     <title></title>
+    <script type="text/javascript">
+    function hapus(){
+      if(window.confirm("Apakah Anda yakin ingin menghapus data?")) {
+        window.alert("Data Berhasil dihapus")
+      }
+    else
+    {
+      window.alert("Data Tidak dihapus")
+    }};
+
+    function edit(){
+      if(window.confirm("Apakah Anda yakin ingin mengedit data?")){
+        window.alert("Data akan di edit")
+      } else {
+        window.alert("Data tidak di edit")
+      }};
+
+  </script>
   </head>
   <body>
     <div class="header">
@@ -91,7 +109,8 @@
   <td>089123453234</td>
   <td>Mahasiswi</td>
   <td>Rp600.000,-</td>
-  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi">  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+</td>
 </tr>
 <tr>
   <td>00002</td>
@@ -99,7 +118,8 @@
   <td>089218392</td>
   <td>Mahasiswi</td>
   <td>Rp550.000,-</td>
-  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi">  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+</td>
 </tr>
 <tr>
   <td>00003</td>
@@ -107,7 +127,8 @@
   <td>089123453234</td>
   <td>Dosen</td>
   <td>Rp600.000,-</td>
-  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>00004</td>
@@ -123,7 +144,8 @@
   <td>081198290233</td>
   <td>Dosen</td>
   <td>Rp2.550.000,-</td>
-  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>00006</td>
@@ -131,7 +153,8 @@
   <td>0812783922</td>
   <td>Mahasiswa</td>
   <td>Rp1.000.500,-</td>
-  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="view"><img src="icon/view.png" class="gambartombolaksi"><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 </table>
 

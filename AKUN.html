@@ -5,6 +5,24 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
     <title></title>
+    <script type="text/javascript">
+    function hapus(){
+      if(window.confirm("Apakah Anda yakin ingin menghapus data?")) {
+        window.alert("Data Berhasil dihapus")
+      }
+    else
+    {
+      window.alert("Data Tidak dihapus")
+    }};
+
+    function edit(){
+      if(window.confirm("Apakah Anda yakin ingin mengedit data?")){
+        window.alert("Data akan di edit")
+      } else {
+        window.alert("Data tidak di edit")
+      }};
+
+  </script>
   </head>
   <body>
     <div class="header">
@@ -99,7 +117,8 @@
   <td>Eladinda123@gmail.com</td>
   <td>eladinda</td>
   <td>eladinda123</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>2</td>
@@ -107,7 +126,8 @@
   <td>habibmaulana@gmail.com</td>
   <td>maulanabababa</td>
   <td>123456</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>3</td>
@@ -115,7 +135,8 @@
   <td>dddimas@gmail.com</td>
   <td>dimasdika</td>
   <td>helloword</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>4</td>
@@ -123,7 +144,8 @@
   <td>erik@gmail.com</td>
   <td>erik321</td>
   <td>mahasiswaerik</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 </table>
 

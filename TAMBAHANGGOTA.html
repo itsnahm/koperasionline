@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
     <title></title>
+    <script type="text/javascript">
+    function tambahAnggota(){
+     alert("Data berhasil tersimpan!")
+      }
+    </script>
   </head>
   <body>
     <div class="header">
@@ -15,7 +20,7 @@
     <div class="col-2 sidebar">
 <div class="menu">
 <center>Hai <u>Ayu Firda Amalia!</u></center>
-<img src="icon/logout.png" class="icon"><li><a href="KOPERASINEJ.html">Keluar</a></li>
+<img src="icon/logout.png" class="icon"><li><a href="login.html">Keluar</a></li>
 </div>
 <center>. . .</center>
 <br>
@@ -88,7 +93,7 @@
   <label name="tambahanggota">Email         : </label><input type="email" name="anggota" value=""><br>
   <label name="tambahanggota">No HP         : </label><input type="number" name="anggota"><br>
   <label name="tambahanggota">Foto : </label><input type="file" name="anggota" value=""><br>
-<input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan">
+<input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan" onclick="tambahAnggota()" >
 </form>
 
 <br>

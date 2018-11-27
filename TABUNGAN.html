@@ -4,6 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
+    <script type="text/javascript">
+    function hapus(){
+      if(window.confirm("Apakah Anda yakin ingin menghapus data?")) {
+        window.alert("Data Berhasil dihapus")
+      }
+    else
+    {
+      window.alert("Data Tidak dihapus")
+    }};
+
+    function edit(){
+      if(window.confirm("Apakah Anda yakin ingin mengedit data?")){
+        window.alert("Data akan di edit")
+      } else {
+        window.alert("Data tidak di edit")
+      }};
+
+  </script>
     <title></title>
   </head>
   <body>
@@ -87,7 +105,8 @@
   <td>00004 - Fajar</td>
   <td>Rp500.000,-</td>
   <td>Rp1.600.000,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>89761</td>
@@ -95,7 +114,8 @@
   <td>00004 - Fajar</td>
   <td>Rp100.000,-</td>
   <td>Rp1.100.000,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>89711</td>
@@ -103,7 +123,8 @@
   <td>00006 - Iis</td>
   <td>Rp250.000,-</td>
   <td>Rp750.000,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>32459</td>
@@ -111,7 +132,8 @@
   <td>00004 - Fajar</td>
   <td>Rp500.000,-</td>
   <td>Rp1.000.000,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>64728</td>
@@ -119,7 +141,8 @@
   <td>00003 - Okta</td>
   <td>Rp50.000,-</td>
   <td>Rp2.050.000,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>63721</td>
@@ -127,7 +150,8 @@
   <td>00004 - Fajar</td>
   <td>Rp5.500,-</td>
   <td>Rp55.500,-</td>
-  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
+  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 </table>
 

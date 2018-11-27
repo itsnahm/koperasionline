@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
     <title></title>
+    <script type="text/javascript">
+    function tambahProduk(){
+     alert("Data berhasil tersimpan!")
+      }
+    </script>
   </head>
   <body>
     <div class="header">
@@ -15,7 +20,7 @@
     <div class="col-2 sidebar">
 <div class="menu">
 <center>Hai <u>Ayu Firda Amalia!</u></center>
-<img src="icon/logout.png" class="icon"><li><a href="KOPERASINEJ.html">Keluar</a></li>
+<img src="icon/logout.png" class="icon"><li><a href="login.html">Keluar</a></li>
 </div>
 <center>. . .</center>
 <br>
@@ -89,7 +94,7 @@
   <label name="tambahanggota">Stok barang     : </label><input type="number" name="anggota"><br>
   <label name="tambahanggota">Harga satuan     : </label><input type="number" name="anggota"><br>
 
-<input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan">
+<input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan" onclick="tambahProduk">
 </form>
 
 <br>
