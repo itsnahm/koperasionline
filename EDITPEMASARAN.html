@@ -8,9 +8,9 @@
   </head>
   <body><center>
     <div class="header">
-      <img src="image/logo.png" class="logo">
-      <h2>KPRI UNIVERSITAS JEMBER</h2> <br>
-      <i><marquee scrollamount=15>Kooperatif dan bijaksana</marquee></i>
+    <img src="image/logo.png" class="logo">
+    <h2>KPRI UNIVERSITAS JEMBER</h2> <br>
+    <i><marquee scrollamount=15>Kooperatif dan bijaksana</marquee></i>
     </div></center>
 
     <div class="col-2 sidebar">
@@ -28,9 +28,9 @@
           <img src="icon/profile.png" class="icon"/><li><a href="PROFIL.html">Profil</a></li>
           <img src="icon/product.png" class="icon"/><li><a href="PRODUK.html">Produk</a></li>
           <ul>
-            <img src="icon/dot.png" class="icon"/><li><a href="PEMASARAN.html">Pemasaran</a></li>
+            <div class="select"><img src="icon/dot.png" class="icon"/><li><a href="PEMASARAN.html"><b>Pemasaran</b></a></li></div>
 
-            <div class="select"><img src="icon/dot.png" class="icon"/><li><a href="PROMO.html"><b>Promo</b></a></li></div>
+            <img src="icon/dot.png" class="icon"/><li><a href="PROMO.html">Promo</a></li>
           </ul>
           <img src="icon/simpanpinjam.png" class="icon"><li><a href="TABUNGAN.html">Tabungan</a></li>
           <img src="icon/bill.png" class="icon"><li><a href="TAGIHAN.html">Tagihan</a></li>
@@ -56,19 +56,41 @@
   <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
   <td><li>Produk</li></td>
   <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
-  <td><li>Promo</li></td>
+  <td><li>Pemasaran</li></td>
 </tr>
 </table>
 </div>
 
+<br>
+
+<div class="kotakakun">
+  <table class="navigasi">
+    <tr>
+<td><img src="icon/menuwhite.png" class="iconpetunjuk"/></td>
+<td><li>Edit Halaman Pemasaran</li></td>
+    </tr>
+    </table>
+</div>
+
+
+<form name="tambahtulisan">
+  <input type="text" name="tulisan" placeholder="Judul tulisan..."> <br>
+
+
+<textarea name="tulisan"></textarea><br>
+
+<label name="tambahanggota">Gambar pendukung : </label><input type="file" name="tulisan"> <br>
+
+
+<input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan" onclick="tambahProduk">
+</form>
+
+<br>
+<button type="button" name="kembali" onclick="window.location.href='PEMASARAN.html'"><img src="icon/kembali.png" class="gambartombol">Kembali</button>
 
 
 
-<center><h1>Promo Akhir Bulan</h1></center>
-      <img src="1.jpg" alt="banner" class="image"></img><br>
-      <p>Promo akhir bulan dengan mengikuti pre-order jaket Universitas Jember. Jaket Universitas Jember berbahan nyaman dan mudah dipakai dimana saja. Dapatkan diskon sebesar 10%. Promo berlaku hingga Januari 2019</p>
 
-<button type="button" name="tambahanggota" onclick="window.location.href='EDITPROMO.html'"><img src="icon/edit.png" class="gambartombol" >Edit Promo</button>
     </div>
 
     <div class="footer">

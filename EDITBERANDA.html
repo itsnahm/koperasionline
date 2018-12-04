@@ -5,32 +5,35 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
     <title></title>
-    <script type="text/javascript">
-    function tambahProduk(){
-     alert("Data berhasil tersimpan!")
-      }
+    <script>
+
+
+
     </script>
   </head>
-  <body><center>
+  <body>
+  	<center>
     <div class="header">
-      <img src="image/logo.png" class="logo"><h2>KPRI UNIVERSITAS JEMBER</h2> <br>
+     <img src="image/logo.png" class="logo">
+     <h2> KPRI UNIVERSITAS JEMBER</h2></image>
       <i><marquee scrollamount=15>Kooperatif dan bijaksana</marquee></i>
+
     </div></center>
 
     <div class="col-2 sidebar">
-<div class="menu">
-<center>Hai <u>Ayu Firda Amalia!</u></center>
-<img src="icon/logout.png" class="icon"><li><a href="login.html">Keluar</a></li>
-</div>
+      <div class="menu" >
+      <center>Hai <u>Ayu Firda Amalia!</u></center>
+      <img src="icon/logout.png" class="icon"><li><a href="login.html" >Keluar</a></li>
+      </div>
 <center>. . .</center>
 <br>
 
       <div class="menu">
         <center>Menu utama</center><br>
       <ul>
-        <img src="icon/iconhome.png" class="icon"/><li><a href="BERANDA.html">Beranda</a></li>
+        <div class="select"><img src="icon/iconhome.png" class="icon"/><li><b>Beranda</b></li></div>
         <img src="icon/profile.png" class="icon"/><li><a href="PROFIL.html">Profil</a></li>
-        <div class="select"><img src="icon/product.png" class="icon"/><li><a href="PRODUK.html"><b>Produk</b></a></li></div>
+        <img src="icon/product.png" class="icon"/><li><a href="PRODUK.html">Produk</a></li>
         <ul>
           <img src="icon/dot.png" class="icon"/><li><a href="PEMASARAN.html">Pemasaran</a></li>
 
@@ -52,53 +55,39 @@
     </div>
 
     <div class="col-10 main">
-
 <div class="petunjuk">
-  <table class="navigasi">
-<tr>
-  <td><img src="icon/home2.png" class="iconpetunjuk"/></td>
-  <td><li>Beranda</li></td>
-  <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
-  <td><li>Produk</li></td>
-  <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
-  <td><li>Tambah Data Produk</li></td>
-</tr>
+  <table>
+  <tr>
+    <td><img src="icon/home2.png" class="iconpetunjuk"/></td>
+    <td><li>Beranda</li></td>
+    <td><img src="icon/home2.png" class="iconpetunjuk"/></td>
+    <td><li>Edit Beranda</li></td>
+  </tr>
 </table>
 </div>
 
 <br>
 
-<div class="kotakakun">
-  <table class="navigasi">
-    <tr>
-<td><img src="icon/menuwhite.png" class="iconpetunjuk"/></td>
-<td><li>Tambah Data Produk</li></td>
-    </tr>
-    </table>
-</div>
 
-<br>
 
-<form name="tambahanggota">
-  <label name="tambahanggota">ID Produk         :</label> <input type="number" name="anggota" value=""> <br>
-  <label name="tambahanggota">Tanggal stok        :</label> <input type="date" name="birth" value=""> <br>
-  <label name="tambahanggota">Kategori Produk </label><select name="sex">
-    <option value="1">Sembako </option>
-    <option value="2">Alat tulis</option>
-    <option value="3">Seragam</option>
-    <option value="4">Pakaian</option>
-    <option value="5">Alat Kebersihan</option>
-    <option value="6">Produk Kecantikan</option>
-  </select> <br>
 
-  <label name="tambahanggota">Stok barang     : </label><input type="number" name="anggota"><br>
-  <label name="tambahanggota">Harga satuan     : </label><input type="number" name="anggota"><br>
+
+<form name="tambahtulisan">
+  <input type="text" name="tulisan" placeholder="Judul tulisan..."> <br>
+
+
+<textarea name="tulisan"></textarea><br>
+
+<label name="tambahanggota">Gambar pendukung : </label><input type="file" name="tulisan"> <br>
+
 
 <input type="reset" name="tombolform" value="Reset"><input type="submit" name="tombolform" value="Simpan" onclick="tambahProduk">
 </form>
 
 <br>
-<button type="button" name="kembali" onclick="window.location.href='TABUNGAN.html'"><img src="icon/kembali.png" class="gambartombol">Kembali</button>
+<button type="button" name="kembali" onclick="window.location.href='BERANDA.html'"><img src="icon/kembali.png" class="gambartombol">Kembali</button>
+
+
     </div>
 
     <div class="footer">
@@ -106,7 +95,7 @@
         <center><img src="icon/logokoperasi.png" height="50px" width="50px"></center><br>
 
 <center>KPRI UNIVERSITAS JEMBER</center><br>
-<table name="alamat" align="center">
+<table name="alamat">
 <tr>
   <td><img src="icon/address.png" width="25px"></td>
   <td>Jl. Kalimantan No.27, Krajan Timur, Sumbersari, Kabupaten Jember, Jawa Timur 68121</td>

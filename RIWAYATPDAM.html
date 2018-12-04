@@ -4,24 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="shortcut icon" href="icon/KPRI.png"/>
-    <script type="text/javascript">
-    function hapus(){
-      if(window.confirm("Apakah Anda yakin ingin menghapus data?")) {
-        window.alert("Data Berhasil dihapus")
-      }
-    else
-    {
-      window.alert("Data Tidak dihapus")
-    }};
-
-    function edit(){
-      if(window.confirm("Apakah Anda yakin ingin mengedit data?")){
-        window.alert("Data akan di edit")
-      } else {
-        window.alert("Data tidak di edit")
-      }};
-
-  </script>
     <title></title>
   </head>
   <body><center>
@@ -32,10 +14,10 @@
     </div></center>
 
     <div class="col-2 sidebar">
-      <div class="menu">
-      <center>Hai <u>Ayu Firda Amalia!</u></center>
-      <img src="icon/logout.png" class="icon"><li><a href="login.html">Keluar</a></li>
-      </div>
+<div class="menu">
+<center>Hai <u>Ayu Firda Amalia!</u></center>
+<img src="icon/logout.png" class="icon"><li><a href="KOPERASINEJ.html">Keluar</a></li>
+</div>
 <center>. . .</center>
 <br>
 
@@ -50,11 +32,11 @@
 
           <img src="icon/dot.png" class="icon"/><li><a href="PROMO.html">Promo</a></li>
         </ul>
-        <div class="select"><img src="icon/simpanpinjam.png" class="icon"><li><b>Tabungan</b></li></div>
-        <img src="icon/bill.png" class="icon"><li><a href="TAGIHAN.html">Tagihan</a></li>
+        <img src="icon/simpanpinjam.png" class="icon"><li><a href="TABUNGAN.html">Tabungan</a></li>
+        <div class="select"><img src="icon/bill.png" class="icon"><li><a href="TAGIHAN.html"><b>Tagihan</b></a></li></div>
         <img src="icon/iconsettings.png" class="icon"/><li><a href="PENGATURAN.html">Pengaturan</a></li>
         <ul>
-          <img src="icon/dot.png" class="icon"/><li><a href="ANGGOTA.html">Anggota</a></li>
+          <img src="icon/dot.png" class="icon"/><li>Anggota</li>
           <img src="icon/dot.png" class="icon"/><li><a href="AKUN.html">Akun</a></li>
         </ul>
       </ul>
@@ -66,13 +48,16 @@
     </div>
 
     <div class="col-10 main">
+
 <div class="petunjuk">
   <table class="navigasi">
 <tr>
   <td><img src="icon/home2.png" class="iconpetunjuk"/></td>
   <td><li>Beranda</li></td>
   <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
-  <td><li>Tabungan</li></td>
+  <td><li>Tagihan</li></td>
+  <td><img src="icon/nextblack.png" class="iconpetunjuk"/></td>
+  <td><li>Riwayat Pembayaran PDAM</li></td>
 </tr>
 </table>
 </div>
@@ -83,79 +68,72 @@
   <table class="navigasi">
     <tr>
 <td><img src="icon/menuwhite.png" class="iconpetunjuk"/></td>
-<td><li>Data Tabungan Anggota</li></td>
+<td><li>Riwayat Pembayaran PDAM</li></td>
     </tr>
     </table>
 </div>
-<br>
-<input type="search" name="search" placeholder="Cari data tabungan" /><button type="button" name="tambahanggota" onclick="window.location.href='TAMBAHTABUNGAN.html'"><img src="icon/plus.png" class="gambartombol">Tambah Tabungan</button>
-<br>
 
+<br>
 <table name="daftaranggota">
 <tr>
   <td>ID Transaksi</td>
   <td>Tanggal transaksi</td>
   <td>Nama anggota</td>
-  <td>Setoran</td>
-  <td>Total tabungan</td>
+  <td>Nomor pelanggan</td>
+  <td>Area</td>
   <td>Aksi</td>
 </tr>
 <tr>
   <td>12342</td>
   <td>21/11/2018</td>
   <td>00004 - Fajar</td>
-  <td>Rp500.000,-</td>
-  <td>Rp1.600.000,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>9102911121</td>
+  <td>Kec Ajung</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>89761</td>
   <td>22/11/2018</td>
   <td>00004 - Fajar</td>
-  <td>Rp100.000,-</td>
-  <td>Rp1.100.000,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>9807651230</td>
+  <td>Kec Pakusari</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>89711</td>
   <td>23/11/2018</td>
   <td>00006 - Iis</td>
-  <td>Rp250.000,-</td>
-  <td>Rp750.000,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>0192001111</td>
+  <td>Kec Ambulu</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>32459</td>
   <td>1/12/2018</td>
   <td>00004 - Fajar</td>
-  <td>Rp500.000,-</td>
-  <td>Rp1.000.000,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>9102210102</td>
+  <td>Kec Sumbersari</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>64728</td>
   <td>2/12/2018</td>
   <td>00003 - Okta</td>
-  <td>Rp50.000,-</td>
-  <td>Rp2.050.000,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>0192034533</td>
+  <td>Kec Ajung</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 <tr>
   <td>63721</td>
   <td>2/12/2018</td>
   <td>00004 - Fajar</td>
-  <td>Rp5.500,-</td>
-  <td>Rp55.500,-</td>
-  <td><button type="button" name="ubah" onclick="edit()"><img src="icon/edit.png" class="gambartombolaksi"></button>
-  <button type="button" name="hapus" onclick="hapus()"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
+  <td>9234547868</td>
+  <td>Kec Kencong</td>
+  <td><button type="button" name="ubah"><img src="icon/edit.png" class="gambartombolaksi"></button><button type="button" name="hapus"><img src="icon/delete.png" class="gambartombolaksi"></button></td>
 </tr>
 </table>
-
+<br>
+<button type="button" name="kembali" onclick="window.location.href='TAGIHAN.html'"><img src="icon/kembali.png" class="gambartombol">Kembali</button>
     </div>
 
     <div class="footer">
@@ -163,7 +141,7 @@
         <center><img src="icon/logokoperasi.png" height="50px" width="50px"></center><br>
 
 <center>KPRI UNIVERSITAS JEMBER</center><br>
-<table name="alamat">
+<table name="alamat" align="center">
 <tr>
   <td><img src="icon/address.png" width="25px"></td>
   <td>Jl. Kalimantan No.27, Krajan Timur, Sumbersari, Kabupaten Jember, Jawa Timur 68121</td>
